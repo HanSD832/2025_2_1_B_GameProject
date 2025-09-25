@@ -32,12 +32,12 @@ public class GameManager : MonoBehaviour
     public void CollectItem()
     {
         itemsCollected++;
-        Debug.Log($"Item Collected! (Total: {itemsCollected}items)")
+        Debug.Log($"Item Collected! (Total: {itemsCollected}items)");
     }
 
     public void UpdateUI()
     {
-        if (scoreText != nulll)
+        if (scoreText != null)
         {
             scoreText.text = "Score: " + playerScore;
         }
